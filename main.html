@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script>
+		$(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MoveTopBtn').fadeIn();
+            } else {
+                $('#MoveTopBtn').fadeOut();
+            }
+        });
+         
+        $("#MoveTopBtn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+	</script>
+    <title> Choose your K-drama </title>
+</head>
+
+<body>
+    <div class="nav">
+		<h1 class="stie-name">코-드</h1>
+
+		<ul class ="nav-menu">
+			<li><a href ='main.html'>HOME</a></li>
+			<li><a href ='info.html'>INFO</a></li>
+			<li><a href ='contact.html'>CONTACT</a></li>
+		</ul>
+
+    </div>
+
+    <div class="section">
+    	<input type="radio" name="slide" id="slide01" checked>
+	    <input type="radio" name="slide" id="slide02">
+	    <input type="radio" name="slide" id="slide03">
+
+	    <div class="slide-wrap">
+		<ul class="slidelist">
+			<li>
+				<a>
+					<label for="slide03" class="left"></label>
+					<div class="textbox">
+						<h3>한국드라마 인기 상승중 1위</h3>
+						<p>슬기로운 의사생활</p>
+					</div>
+					<img src="./img/slide01.jpg">
+					<label for="slide02" class="right"></label>
+				</a>
+			</li>
+			<li>
+				<a>
+					<label for="slide01" class="left"></label>
+					<div class="textbox">
+						<h3>한국드라마 인기 상승중 2위</h3>
+						<p>비밀의 숲</p>
+					</div>
+					<img src="./img/slide02.jpg">
+					<label for="slide03" class="right"></label>
+				</a>
+			</li>
+			<li>
+				<a>
+					<label for="slide02" class="left"></label>
+					<div class="textbox">
+						<h3>한국드라마 인기 상승중 3위</h3>
+						<p>60일 지정생존자</p>
+					</div>
+					<img src="./img/slide03.jpg">
+					<label for="slide01" class="right"></label>
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+
+	<div class = "intro">
+
+		<h2 class ="intro-title">"안녕하세요! 제 이름은 코-드."<br>
+			다양한 한국 드라마를 소개합니다. 
+		</h2>
+
+		<p class ="intro-comment">	
+			코-드(KO-D)는 Korea Drama의 줄임말로,<br>
+			한국드라마를 좋아하지만 뭘 볼지 고민하는 당신에게<br>
+			새로운 즐거움을 맞이할 수 있는 선택지를 제시합니다.<br><br>
+			각자의 개성과 취향에 맞는 새로운 드라마를 발견해보세요.<br>
+		</p>
+
+	</div>
+
+    <div class="cardbox">
+
+		<h2>OTT Service</h2>
+
+        <div class="card">	
+			<h2>Netflix</h2>
+			<a href="https://www.netflix.com/kr/" target="_blank"><img src="./img/Netflix.png"></a>
+			<p>넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스.</p>
+			<p>멤버십 요금 : 월 9,500원 ~ </p>
+
+		</div>
+
+        <div class="card">
+			<h2>Watcha</h2>
+			<a href="https://watcha.com/" target="_blank"><img src="./img/watcha.png"></a>
+			<p>왓챠는 약 9만여 편의 영화, 드라마, 예능, 다큐, 애니메이션을 보유하고 있으며 한국의 영화평 기록 및 추천 서비스를 운영하는 (주)왓챠에서 런칭한 스트리밍 서비스.</p>
+			<p>멤버십 요금 : 월 7,900원 ~ </p>
+		</div>
+
+        <div class="card">
+			<h2>Tving</h2>
+			<a href="https://www.tving.com/" target="_blank"><img src="./img/tving.png"></a>
+			<p>티빙은 200여개의 라이브 채널 및 5만 여편의 VOD를 PC와 스마트폰, 태블릿 PC 등 모든 모바일 스마트기기, 그리고 스마트 TV에서 FHD급 고화질로 시청할 수 있는 스트리밍 서비스.</p>
+			<p>멤버십 요금 : 월 7,900원 ~ </p>
+		</div>
+
+    </div>
+
+
+	<a class="MoveTopBtn" href="#"><img src="./img/top.png" width="30px"></a>
+
+	<div class="footer" >
+		<p>Admin Contact</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        function img_err()
+        {
+            alert("오류로 인해 이미지가 정상적으로 보이지 않을 수도 있습니다.")
+        }
+
+    $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MoveTopBtn').fadeIn();
+            } else {
+                $('#MoveTopBtn').fadeOut();
+            }
+        });
+         
+        $("#MoveTopBtn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+</script>
+    </script>
+    <title> Choose your K-drama </title>
+</head>
+
+<body>
+<div class="nav">
+    <h1 class="stie-name">코-드</h1>
+
+    <ul class ="nav-menu">
+        <li><a href ='main.html'>HOME</a></li>
+        <li><a href ='info.html'>INFO</a></li>
+        <li><a href ="contact.html">CONTACT</a></li>
+</div>
+
+<div class ="genre">
+    <h3 style="text-align: center; margin: 10px; font-size: 22px; color: #366b81;"> 😄 장르별 정리 😄</h3>
+
+    <div class="tags">
+        <h4>범죄</h4>
+        <button class = "tag"><a href=#secretforest>비밀의 숲</a></button> 
+        <button class = "tag"><a href=#rawschool>로스쿨</a></button> 
+        <button class = "tag"><a href=#voice>보이스</a></button> 
+        <button class = "tag"><a href=#signal>시그널</a></button> 
+    </div>
+
+    <div class="tags">
+        <h4>멜로</h4>
+        <button class = "tag"><a href=#hospitalplaylist>슬기로운 의사생활</a></button> 
+        <button class = "tag"><a href=#melodramatic>멜로가체질</a></button> 
+        <button class = "tag"><a href=#themyth>시지프스</a></button>
+        <button class = "tag"><a href=#hoteldeluna>호텔델루나</a></button>
+    </div>
+
+    <div class="tags">
+        <h4>정치</h4>
+        <button class = "tag"><a href=#60days>60일지정생존자</a></button> 
+        <button class = "tag"><a href=#theaide>보좌관</a></button> 
+        <button class = "tag"><a href=#hyena>하이에나</a></button>
+        <button class = "tag"><a href=#undercover>언더커버</a></button>
+
+    </div>
+
+    <div class="tags">
+        <h4>휴먼</h4>
+        <button class = "tag"><a href=#blackdog>블랙독</a></button> 
+        <button class = "tag"><a href=#misaeng>미생</a></button> 
+        <button class = "tag"><a href=#life>라이프</a></button>
+        <button class = "tag"><a href=#itaewonclass>이태원클라쓰</a></button>
+    </div>
+
+</div>
+
+
+<div class="stack">
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/201084/20108423.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 ld="secretforest">비밀의 숲(16부작) </h3>
+            <p>감정을 느끼지 못하는 외톨이 검사 황시목이, 정의롭고 따뜻한 형사 한여진과 함께 검찰 스폰서 살인사건과 그 이면에 숨겨진 진실을 파헤치는 내부 비밀 추적극</p>
+            <p>출연 배우 : 조승우, 배두나, 이준혁, 유재명, 신혜선 등</p>
+        </div>
+    </div>
+    
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/203922/20392286.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'"  width="350px">
+        <div class="information">
+            <h3 id="rawschool">로스쿨(16부작) </h3>
+            <p>대한민국 최고의 명문 로스쿨 교수와 학생들이 전대미문의 사건에 얽히게 되면서 펼쳐지는 캠퍼스 미스터리와 더불어, 피, 땀, 눈물의 살벌한 로스쿨 생존기를 통해 예비 법조인들이 진정과 법과 정의를 깨닫는 과정을 담은 드라마</p>
+            <p>출연 배우 : 김명민, 김범, 류혜영, 이정은, 박혁권 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/200848/20084880.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="voice">보이스(14부작) </h3>
+            <p>범죄 현장의 골든타임을 사수하는 112 신고센터 대원들의 치열한 기록을 그린 소리 추격 스릴러 드라마</p>
+            <p>출연 배우 : 이하나, 이진욱, 권율, 박병은 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/200254/20025404.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="signal">시그널(16부작)</h3>
+            <p>"우리의 시간은 이어져있다." 과거로부터 걸려온 간절한 신호(무전)로 연결된 현재와 과거의 형사들이 오래된 미제 사건들을 다시 파헤친다!</p>
+            <p>출연 배우 : 김혜수, 이제훈, 조진웅, 장현성 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/203175/20317548.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'"  width="350px">
+        <div class="information">
+            <h3 id="hospitalplaylist">슬기로운 의사생활(12부작) </h3>
+            <p>누군가는 태어나고 누군가는 삶을 끝내는, 인생의 축소판이라 불리는 병원에서 평범한 듯 특별한 하루하루를 살아가는 사람들과 눈빛만 봐도 알 수 있는 20년지기 친구들의 케미스토리를 담은 드라마</p>
+            <p>출연 배우 : 조정석, 유연석, 정경호, 김대명, 전미도 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/202792/20279299.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="melodramatic">멜로가 체질(16부작) </h3>
+            <p>서른 살 여자 친구들의 고민, 연애, 일상을 그린 코믹 드라마</p>
+            <p>출연 배우 : 천우희, 전여빈, 한지은 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/40305/4030531.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="themyth">시지프스 : the myth(16부작) </h3>
+            <p>우리의 세상에 정체를 숨기고 살아가고 있는 존재를 밝혀내려는 천재공학자와 그를 위해 멀고도 위험한 길을 거슬러온 구원자의 여정을 그린 판타지 미스터리 드라마</p>
+            <p>출연 배우 : 조승우, 박신혜, 김병철, 정혜인 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/202654/20265451.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="hoteldeluna">호텔 델루나(16부작) </h3>
+            <p>엘리트 호텔리어가 운명적인 사건으로 호텔 델루나의 지배인을 맡게 되면서 달처럼 고고하고 아름답지만 괴팍한 사장과 함께 델루나를 운영하며 생기는 특별한 이야기</p>
+            <p>출연 배우 : 아이유, 여진구, 조헌철, 박유나 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/202722/20272206.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="60days">60일, 지정생존자(16부작)</h3>
+            <p>갑작스러운 국회의사당 폭탄 테러로 대통령을 잃은 대한민국에서 환경부 장관 박무진이 60일간의 대통령 권한대행으로 지정되면서 테러의 배후를 찾아내고 가족과 나라를 지키며 성장하는 이야기</p>
+            <p>출연 배우 : 지진희, 이준혁, 허준호, 강한나 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/202614/20261472.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="theaide">보좌관(10부작)</h3>
+            <p>스포트라이트 뒤에서 세상을 움직이는 리얼 정치 플레이어들의 위험한 도박. 권력의 정점을 향한 슈퍼 보좌관 장태준의 치열한 생존기</p>
+            <p>출연 배우 : 이정재, 신민아, 이엘리야, 김동준 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/203179/20317916.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="hyena">하이에나(16부작)</h3>
+            <p>머릿속엔 법을, 가슴속엔 돈을 품은 '똥묻겨묻' 변호사들의 물고 뜯고 찢는 하이에나식 생존기를 그린 드라마</p>
+            <p>출연 배우 : 김혜수, 주지훈, 김호정, 송영규 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/40458/4045854.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="undercover">언더커버(16부작)</h3>
+            <p>자신의 정체를 숨기고 살아온 남자가 일련의 사건에 휘말리며 가족을 지키기 위해 고군분투 하는 이야기</p>
+            <p>출연 배우 : 지진희, 김현주, 허준호, 정만식 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/202967/20296720.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="blackdog">블랙 독(16부작) </h3>
+            <p>기간제 교사가 된 사회 초년생 고하늘이 우리 삶의 축소판인 '학교'에서 꿈을 지키며 살아남기 위해 고군분투하는 이야기</p>
+            <p>출연 배우 : 서현진, 라미란, 하준, 이창훈 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/4650/465047.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id="misaeng">미생(20부작) </h3>
+            <p>바둑이 인생의 모든 것이었던 장그래가 프로입단에 실패한 후, 냉혹한 현실에 던져지면서 벌어지는 이야기를 그린 드라마</p>
+            <p>출연 배우 : 임시완, 이성민, 강소라, 김대명 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/201810/20181052.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id=life>라이프(16부작) </h3>
+            <p>우리 몸 속에서 일어나는 격렬한 항원항체 반응처럼, 지키려는 자와 바꾸려는 자의 신념이 병원 안 여러 군상 속에서 충돌하는 의학드라마</p>
+            <p>출연 배우 : 이동욱, 조승우, 문소리, 유재명 등</p>
+        </div>
+    </div>
+
+    <div class = "topic">
+        <img class="poster" src="https://image.bugsm.co.kr/album/images/original/203131/20313198.jpg?version=undefined" onerror="img_err(); this.src = './img/noimg.png'" width="350px">
+        <div class="information">
+            <h3 id=itaewonclass>이태원클라쓰(16부작) </h3>
+            <p>불합리한 세상 속, 고집과 객기로 뭉친 청춘들의 '힙'한 반란이 시작된다. 세계를 압축해 놓은 듯한 이태원. 이 작은 거리, 각자의 가치관으로 자유를 쫓는 그들의 창업 신화</p>
+            <p>출연 배우 : 박서준, 김다미, 유재명, 권나라 등</p>
+        </div>
+    </div>
+</div>
+
+
+<a class="MoveTopBtn" href="#"><img src="./img/top.png" width="30px"></a>
+
+<div class="footer" >
+    <p>Admin Contact</p>
+</div>
+
+</body>
+
+</html>
+

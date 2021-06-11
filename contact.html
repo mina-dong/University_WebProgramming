@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title> Choose your K-drama </title>
+    <script>
+      function handleOnChange(e) {
+      // 선택된 데이터의 텍스트값 가져오기
+      const text = e.options[e.selectedIndex].text;
+  
+      console.log(e.options);
+  
+      // 선택한 텍스트 출력
+      document.getElementById('result').innerText
+      = text;
+      }
+      
+      $(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#MoveTopBtn').fadeIn();
+            } else {
+                $('#MoveTopBtn').fadeOut();
+            }
+        });
+         
+        $("#MoveTopBtn").click(function() {
+            $('html, body').animate({
+                scrollTop : 0
+            }, 400);
+            return false;
+        });
+    });
+
+    </script>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 class="stie-name">코-드</h1>
+    
+        <ul class ="nav-menu">
+            <li><a href ='main.html'>HOME</a></li>
+            <li><a href ='info.html'>INFO</a></li>
+            <li><a href ="contact.html">CONTACT</a></li>
+    </div>
+
+    <h3 class = "contactus">CONTACT US</h3>
+
+		<p class ="contact-comment">	
+			"안녕하세요! 제 이름은 코-드."<br>
+			한국드라마를 좋아하지만 뭘 볼지 고민하는 당신에게<br>
+			새로운 즐거움을 맞이할 수 있는 선택지를 제시합니다.<br><br>
+			
+      새로운 드라마를 제시하거나 궁금한 점이 있다면<br>
+      😄 아래 폼을 작성해주시길 바랍니다 😄<br>
+		</p>
+
+      <!-- formspree.io 이용하여 서버없이 메일수신가능 -->
+      <form class="emailform" action="https://formspree.io/youraddress" method="POST" style="height: 650px;">
+        <label> 분류 : 
+          <select name="emailsubject" onchange="handleOnChange(this)" style="height: 30px; width: 535px; text-align-last: center;" >
+            <option value="requests">[추가요청]</option>
+            <option value="modify">[정보수정]</option>
+            <option value="error">[오류발생]</option>
+            <option value="extra">[기타문의]</option>
+          </select>
+        </label><BR>
+        <hr style="margin:20px 0px; border: 1px dashed #366b81;">
+        <label>
+          수신받을 이메일 :
+          <input type="email" name="_replyto" style="height: 30px; width:455px;" >
+        </label><BR>
+        <hr style="margin:20px 0px; border: 1px dashed #366b81;">
+        <label>
+          문의사항을 작성해주세요 :
+        <hr style="margin:10px 0px; border-style:hidden;">
+         <textarea name="message" id='result'style="height: 400px; width: 580px;">내용을 입력해주세요.</textarea>
+       </label><BR>
+    
+      <button type="submit" style="width: 580px; height: 40px; background: #366b81; border: none; border-radius: 10px; color: aliceblue; font-family:'Noto Sans KR', sans-serif;" >발송</button>
+     </form>
+
+    <a class="MoveTopBtn" href="#"><img src="./img/top.png" width="30px"></a>
+
+
+    <div class="footer" >
+        <p>Admin Contact</p>
+    </div>
+</body>
+</html>
+
+
+
+
+
